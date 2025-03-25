@@ -1,0 +1,248 @@
+�i�J��ѹesp32: SPI Mode       : DIOets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15716
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Mar 25 2025 20:45:24[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (33) boot: chip revision: v3.0[0m
+[0;32mI (36) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (47) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (80) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a1a4h ( 41380) map[0m
+[0;32mI (104) esp_image: segment 1: paddr=0001a1cc vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001a1f0 vaddr=3ffb0000 size=0236ch (  9068) load[0m
+[0;32mI (112) esp_image: segment 3: paddr=0001c564 vaddr=40080000 size=03ab4h ( 15028) load[0m
+[0;32mI (122) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=1497ch ( 84348) map[0m
+[0;32mI (152) esp_image: segment 5: paddr=000349a4 vaddr=40083ab4 size=09118h ( 37144) load[0m
+[0;32mI (173) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (173) boot: Disabling RNG early entropy source...[0m
+[0;32mI (183) cpu_start: Multicore app[0m
+[0;32mI (192) cpu_start: Pro cpu start user code[0m
+[0;32mI (192) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (192) app_init: Application information:[0m
+[0;32mI (192) app_init: Project name:     couter_system[0m
+[0;32mI (196) app_init: App version:      848dc54-dirty[0m
+[0;32mI (201) app_init: Compile time:     Mar 25 2025 20:44:43[0m
+[0;32mI (206) app_init: ELF file SHA256:  dfbcc3b69...[0m
+[0;32mI (210) app_init: ESP-IDF:          v5.4-dirty[0m
+[0;32mI (214) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (218) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (222) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (226) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (232) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (237) heap_init: At 3FFB2C60 len 0002D3A0 (180 KiB): DRAM[0m
+[0;32mI (243) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (248) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (254) heap_init: At 4008CBCC len 00013434 (77 KiB): IRAM[0m
+[0;32mI (260) spi_flash: detected chip: generic[0m
+[0;32mI (262) spi_flash: flash io: dio[0m
+[0;33mW (265) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (278) main_task: Started on CPU0[0m
+[0;32mI (288) main_task: Calling app_main()[0m
+[0;32mI (288) Main: Starting application...[0m
+[0;32mI (288) gpio: GPIO[25]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (288) gpio: GPIO[26]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (298) gpio: GPIO[27]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (308) gpio: GPIO[14]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (318) gpio: GPIO[12]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (328) gpio: GPIO[33]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (328) gpio: GPIO[32]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (338) gpio: GPIO[18]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (348) gpio: GPIO[19]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (358) DisplayTask: Display task started[0m
+[0;32mI (358) gpio: GPIO[5]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (368) InputTask: Input task started[0m
+[0;32mI (368) Main: Application started[0m
+[0;32mI (378) main_task: Returned from app_main()[0m
+[0;32mI (6428) InputTask: Button pressed[0m
+[0;32mI (6428) CounterSystem: Counter value: 01[0m
+[0;32mI (7348) InputTask: Button pressed[0m
+[0;32mI (7348) CounterSystem: Counter value: 02[0m
+[0;32mI (8828) InputTask: Button pressed[0m
+[0;32mI (8828) CounterSystem: Counter value: 03[0m
+[0;32mI (9728) InputTask: Button pressed[0m
+[0;32mI (9728) CounterSystem: Counter value: 04[0m
+[0;32mI (10468) InputTask: Button pressed[0m
+[0;32mI (10468) CounterSystem: Counter value: 05[0m
+[0;32mI (19388) InputTask: Button pressed[0m
+[0;32mI (19388) CounterSystem: Counter value: 06[0m
+[0;32mI (19908) InputTask: Button pressed[0m
+[0;32mI (19908) CounterSystem: Counter value: 07[0m
+[0;32mI (20408) InputTask: Button pressed[0m
+[0;32mI (20408) CounterSystem: Counter value: 08[0m
+[0;32mI (20828) InputTask: Button pressed[0m
+[0;32mI (20828) CounterSystem: Counter value: 09[0m
+[0;32mI (21228) InputTask: Button pressed[0m
+[0;32mI (21228) CounterSystem: Counter value: 10[0m
+[0;32mI (21568) InputTask: Button pressed[0m
+[0;32mI (21568) CounterSystem: Counter value: 11[0m
+[0;32mI (21908) InputTask: Button pressed[0m
+[0;32mI (21908) CounterSystem: Counter value: 12[0m
+[0;32mI (22208) InputTask: Button pressed[0m
+[0;32mI (22208) CounterSystem: Counter value: 13[0m
+[0;32mI (22508) InputTask: Button pressed[0m
+[0;32mI (22508) CounterSystem: Counter value: 14[0m
+[0;32mI (22788) InputTask: Button pressed[0m
+[0;32mI (22788) CounterSystem: Counter value: 15[0m
+[0;32mI (23088) InputTask: Button pressed[0m
+[0;32mI (23088) CounterSystem: Counter value: 16[0m
+[0;32mI (23388) InputTask: Button pressed[0m
+[0;32mI (23388) CounterSystem: Counter value: 17[0m
+[0;32mI (23768) InputTask: Button pressed[0m
+[0;32mI (23768) CounterSystem: Counter value: 18[0m
+[0;32mI (24208) InputTask: Button pressed[0m
+[0;32mI (24208) CounterSystem: Counter value: 19[0m
+[0;32mI (24628) InputTask: Button pressed[0m
+[0;32mI (24628) CounterSystem: Counter value: 20[0m
+[0;32mI (25108) InputTask: Button pressed[0m
+[0;32mI (25108) CounterSystem: Counter value: 21[0m
+[0;32mI (25528) InputTask: Button pressed[0m
+[0;32mI (25528) CounterSystem: Counter value: 22[0m
+[0;32mI (25928) InputTask: Button pressed[0m
+[0;32mI (25928) CounterSystem: Counter value: 23[0m
+[0;32mI (28028) InputTask: Button pressed[0m
+[0;32mI (28028) CounterSystem: Counter value: 24[0m
+[0;32mI (28568) InputTask: Button pressed[0m
+[0;32mI (28568) CounterSystem: Counter value: 25[0m
+[0;32mI (28828) InputTask: Button pressed[0m
+[0;32mI (28828) CounterSystem: Counter value: 26[0m
+[0;32mI (29208) InputTask: Button pressed[0m
+[0;32mI (29208) CounterSystem: Counter value: 27[0m
+[0;32mI (29548) InputTask: Button pressed[0m
+[0;32mI (29548) CounterSystem: Counter value: 28[0m
+[0;32mI (29848) InputTask: Button pressed[0m
+[0;32mI (29848) CounterSystem: Counter value: 29[0m
+[0;32mI (30708) InputTask: Button pressed[0m
+[0;32mI (30708) CounterSystem: Counter value: 30[0m
+[0;32mI (32328) InputTask: Button pressed[0m
+[0;32mI (32328) CounterSystem: Counter value: 31[0m
+[0;32mI (32608) InputTask: Button pressed[0m
+[0;32mI (32608) CounterSystem: Counter value: 32[0m
+[0;32mI (32868) InputTask: Button pressed[0m
+[0;32mI (32868) CounterSystem: Counter value: 33[0m
+[0;32mI (33088) InputTask: Button pressed[0m
+[0;32mI (33088) CounterSystem: Counter value: 34[0m
+[0;32mI (33308) InputTask: Button pressed[0m
+[0;32mI (33308) CounterSystem: Counter value: 35[0m
+[0;32mI (33548) InputTask: Button pressed[0m
+[0;32mI (33548) CounterSystem: Counter value: 36[0m
+[0;32mI (33868) InputTask: Button pressed[0m
+[0;32mI (33868) CounterSystem: Counter value: 37[0m
+[0;32mI (34468) InputTask: Button pressed[0m
+[0;32mI (34468) CounterSystem: Counter value: 38[0m
+[0;32mI (34808) InputTask: Button pressed[0m
+[0;32mI (34808) CounterSystem: Counter value: 39[0m
+[0;32mI (35128) InputTask: Button pressed[0m
+[0;32mI (35128) CounterSystem: Counter value: 40[0m
+[0;32mI (35668) InputTask: Button pressed[0m
+[0;32mI (35668) CounterSystem: Counter value: 41[0m
+[0;32mI (35888) InputTask: Button pressed[0m
+[0;32mI (35888) CounterSystem: Counter value: 42[0m
+[0;32mI (36108) InputTask: Button pressed[0m
+[0;32mI (36108) CounterSystem: Counter value: 43[0m
+[0;32mI (36348) InputTask: Button pressed[0m
+[0;32mI (36348) CounterSystem: Counter value: 44[0m
+[0;32mI (36708) InputTask: Button pressed[0m
+[0;32mI (36708) CounterSystem: Counter value: 45[0m
+[0;32mI (40308) InputTask: Button pressed[0m
+[0;32mI (40308) CounterSystem: Counter value: 46[0m
+[0;32mI (40668) InputTask: Button pressed[0m
+[0;32mI (40668) CounterSystem: Counter value: 47[0m
+[0;32mI (40968) InputTask: Button pressed[0m
+[0;32mI (40968) CounterSystem: Counter value: 48[0m
+[0;32mI (41468) InputTask: Button pressed[0m
+[0;32mI (41468) CounterSystem: Counter value: 49[0m
+[0;32mI (41768) InputTask: Button pressed[0m
+[0;32mI (41768) CounterSystem: Counter value: 50[0m
+[0;32mI (42228) InputTask: Button pressed[0m
+[0;32mI (42228) CounterSystem: Counter value: 51[0m
+[0;32mI (42848) InputTask: Button pressed[0m
+[0;32mI (42848) CounterSystem: Counter value: 52[0m
+[0;32mI (43128) InputTask: Button pressed[0m
+[0;32mI (43128) CounterSystem: Counter value: 53[0m
+[0;32mI (43388) InputTask: Button pressed[0m
+[0;32mI (43388) CounterSystem: Counter value: 54[0m
+[0;32mI (43708) InputTask: Button pressed[0m
+[0;32mI (43708) CounterSystem: Counter value: 55[0m
+[0;32mI (87268) InputTask: Button pressed[0m
+[0;32mI (87268) CounterSystem: Counter value: 56[0m
+[0;32mI (87848) InputTask: Button pressed[0m
+[0;32mI (87848) CounterSystem: Counter value: 57[0m
+[0;32mI (88468) InputTask: Button pressed[0m
+[0;32mI (88468) CounterSystem: Counter value: 58[0m
+[0;32mI (90528) InputTask: Button pressed[0m
+[0;32mI (90528) CounterSystem: Counter value: 59[0m
+[0;32mI (90888) InputTask: Button pressed[0m
+[0;32mI (90888) CounterSystem: Counter value: 60[0m
+[0;32mI (91228) InputTask: Button pressed[0m
+[0;32mI (91228) CounterSystem: Counter value: 61[0m
+[0;32mI (91548) InputTask: Button pressed[0m
+[0;32mI (91548) CounterSystem: Counter value: 62[0m
+[0;32mI (91868) InputTask: Button pressed[0m
+[0;32mI (91868) CounterSystem: Counter value: 63[0m
+[0;32mI (92168) InputTask: Button pressed[0m
+[0;32mI (92168) CounterSystem: Counter value: 64[0m
+[0;32mI (92448) InputTask: Button pressed[0m
+[0;32mI (92448) CounterSystem: Counter value: 65[0m
+[0;32mI (92728) InputTask: Button pressed[0m
+[0;32mI (92728) CounterSystem: Counter value: 66[0m
+[0;32mI (93048) InputTask: Button pressed[0m
+[0;32mI (93048) CounterSystem: Counter value: 67[0m
+[0;32mI (93368) InputTask: Button pressed[0m
+[0;32mI (93368) CounterSystem: Counter value: 68[0m
+[0;32mI (93688) InputTask: Button pressed[0m
+[0;32mI (93688) CounterSystem: Counter value: 69[0m
+[0;32mI (93928) InputTask: Button pressed[0m
+[0;32mI (93928) CounterSystem: Counter value: 70[0m
+[0;32mI (94088) InputTask: Button pressed[0m
+[0;32mI (94088) CounterSystem: Counter value: 71[0m
+[0;32mI (94328) InputTask: Button pressed[0m
+[0;32mI (94328) CounterSystem: Counter value: 72[0m
+[0;32mI (94488) InputTask: Button pressed[0m
+[0;32mI (94488) CounterSystem: Counter value: 73[0m
+[0;32mI (94708) InputTask: Button pressed[0m
+[0;32mI (94708) CounterSystem: Counter value: 74[0m
+[0;32mI (94888) InputTask: Button pressed[0m
+[0;32mI (94888) CounterSystem: Counter value: 75[0m
+[0;32mI (94988) InputTask: Button pressed[0m
+[0;32mI (94988) CounterSystem: Counter value: 76[0m
+[0;32mI (95148) InputTask: Button pressed[0m
+[0;32mI (95148) CounterSystem: Counter value: 77[0m
+[0;32mI (95228) InputTask: Button pressed[0m
+[0;32mI (95228) CounterSystem: Counter value: 78[0m
+[0;32mI (95528) InputTask: Button pressed[0m
+[0;32mI (95528) CounterSystem: Counter value: 79[0m
+[0;32mI (95828) InputTask: Button pressed[0m
+[0;32mI (95828) CounterSystem: Counter value: 80[0m
+[0;32mI (96108) InputTask: Button pressed[0m
+[0;32mI (96108) CounterSystem: Counter value: 81[0m
+[0;32mI (96328) InputTask: Button pressed[0m
+[0;32mI (96328) CounterSystem: Counter value: 82[0m
+[0;32mI (96608) InputTask: Button pressed[0m
+[0;32mI (96608) CounterSystem: Counter value: 83[0m
+[0;32mI (99708) InputTask: Button pressed[0m
+[0;32mI (99708) CounterSystem: Counter value: 84[0m
+[0;32mI (100068) InputTask: Button pressed[0m
+[0;32mI (100068) CounterSystem: Counter value: 85[0m
+[0;32mI (100408) InputTask: Button pressed[0m
+[0;32mI (100408) CounterSystem: Counter value: 86[0m
+[0;32mI (102348) InputTask: Button pressed[0m
+[0;32mI (102348) CounterSystem: Counter value: 87[0m
+[0;32mI (103408) InputTask: Button pressed[0m
+[0;32mI (103408) CounterSystem: Counter value: 88[0m
